@@ -1,5 +1,19 @@
 #!/usr/bin/env ruby
 
+### First question, comparing strings and symbols:
+#
+# According to StackOverflow:
+# String has a lot more methods on it for string manipulation, 
+# while a Symbol is a relatively lean object.
+#
+# Perhaps more important?
+# A symbol (:whatever) is a string that always references the same object
+# It always has the same data address
+# A regular old string ("whatever") does not
+
+
+
+
 ##JS version#######################
 #function sayHello(){ 
 # console.log("hello");
