@@ -41,8 +41,10 @@ puts arr
 
 #this does the comparison thing, 
 #but ruby seems to compare differently than javascript
+#the JS version returns a reversed array.
+#this is not the case with RUBY (see below)
 #NEED TO ASK ABOUT THIS
-arr = [4,1,2,5,3].sort do |a,b| b + a end
+arr = [4,1,2,5,3].sort do |a,b| a + b end
 
 puts arr
 
