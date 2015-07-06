@@ -192,4 +192,38 @@ end
 
 
 
-
+## Try these in JS...
+# irb(main):001:0> [] + []
+# => []
+# irb(main):002:0> [] + {}
+# TypeError: no implicit conversion of Hash into Array
+#   from (irb):2
+#   from /usr/bin/irb:12:in `<main>'
+# irb(main):003:0> {} + []
+# NoMethodError: undefined method `+' for {}:Hash
+#   from (irb):3
+#   from /usr/bin/irb:12:in `<main>'
+# irb(main):004:0> {} + {}
+# NoMethodError: undefined method `+' for {}:Hash
+#   from (irb):4
+#   from /usr/bin/irb:12:in `<main>'
+# irb(main):005:0> Array(16)
+# => [16]
+# irb(main):006:0> Array(16).join("wat")
+# => "16"
+# irb(main):007:0> Array(16).join("wat" + 1)
+# TypeError: no implicit conversion of Fixnum into String
+#   from (irb):7:in `+'
+#   from (irb):7
+#   from /usr/bin/irb:12:in `<main>'
+# irb(main):008:0> Array(16).join("wat" - 1)
+# NoMethodError: undefined method `-' for "wat":String
+#   from (irb):8
+#   from /usr/bin/irb:12:in `<main>'
+# irb(main):009:0> Array(16).join("wat" - 1) + "Batman!"
+# NoMethodError: undefined method `-' for "wat":String
+#   from (irb):9
+#   from /usr/bin/irb:12:in `<main>'
+# irb(main):010:0>
+# 
+# from "WAT!"
